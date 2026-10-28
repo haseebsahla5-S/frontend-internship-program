@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #f6f8fa;
+  --color-surface: #ffffff;
+  --color-text: #1f2328;
+  --color-muted: #57606a;
+  --color-primary: #0b5cad;
+  --color-border: #d0d7de;
+  --radius: 0.5rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

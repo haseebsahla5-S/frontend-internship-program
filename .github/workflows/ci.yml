@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  react-starters:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: month-4-react
+            test: false
+            lint: false
+          - project: month-5-react-advanced
+            test: true
+            lint: false
+          - project: month-6-capstone
+            test: true
+            lint: true
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}/starter
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ matrix.project }}/starter/package-lock.json
+      - run: npm ci
+      - if: matrix.lint
+        run: npm run lint
+      - if: matrix.test
+        run: npx vitest run
+      - run: npm run build

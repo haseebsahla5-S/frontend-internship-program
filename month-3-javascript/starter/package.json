@@ -1,0 +1,13 @@
+{
+  "name": "month-3-javascript",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:week9": "node --test exercises/week-09.test.js",
+    "test:week10": "node --test exercises/week-10.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

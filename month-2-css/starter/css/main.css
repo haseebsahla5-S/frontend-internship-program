@@ -1,0 +1,45 @@
+/*
+  Month 2 — style index.html section by section.
+  Use BEM class names already in the markup. Mobile-first: write the base
+  styles for 360px, then add min-width media queries for larger screens.
+*/
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* Utilities ---------------------------------------------------------- */
+.skip-link {
+  /* Week 5 TODO: hide visually until focused, then show at the top-left */
+}
+
+/* Week 5: Buttons ---------------------------------------------------- */
+.button { /* TODO: padding, radius, display, text-decoration, focus-visible ring */ }
+.button--primary { /* TODO */ }
+.button--ghost { /* TODO */ }
+
+/* Week 6: Header & nav (Flexbox) ------------------------------------- */
+.site-header { /* TODO: logo left, nav centre, CTA right; wrap on small screens */ }
+.site-nav__list { /* TODO: horizontal list, no bullets, gap */ }
+
+/* Week 5: Hero -------------------------------------------------------- */
+.hero { /* TODO: centred text, generous vertical padding */ }
+.hero__title { /* TODO: fluid size with clamp() in week 7 */ }
+
+/* Week 6: Feature cards (Flexbox) ------------------------------------ */
+.features__list { /* TODO: cards in a row that wrap, equal heights */ }
+.card { /* TODO */ }
+
+/* Week 7: Pricing (Grid) ---------------------------------------------- */
+.pricing__grid { /* TODO: repeat(auto-fit, minmax(16rem, 1fr)) */ }
+.plan { /* TODO */ }
+.plan--featured { /* TODO: stand out without breaking the grid */ }
+
+/* Week 8: FAQ, footer, transitions ----------------------------------- */
+.faq__item { /* TODO */ }
+.site-footer { /* TODO */ }
+
+/* Week 8 TODO: wrap transitions in
+@media (prefers-reduced-motion: no-preference) { ... } */

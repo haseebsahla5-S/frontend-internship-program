@@ -1,0 +1,28 @@
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.ghost {
+  background: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.danger {
+  background: var(--color-danger);
+  color: #fff;
+}
